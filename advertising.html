@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <style>
+        span {
+            display: inline-block;
+            width: 250px;
+            height: 100px;
+            background-color: #000;
+            font-size: 20px;
+            text-align: center;
+            line-height: 100px;
+           
+        }
+
+        .bright {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <span id="study" class="bright">博爱丸子汤 向西走200米</span>
+
+</body>
+<script>
+    var study = $("#study")
+
+
+    setInterval(function show() {
+        if (study.hasClass("bright")) {
+            study.removeClass("bright");
+        } else {
+            study.addClass("bright");
+        }
+    }, 200)
+
+
+
+
+</script>
+
+</html>
